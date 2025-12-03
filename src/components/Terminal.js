@@ -28,8 +28,8 @@ const XTerminal = () => {
         terminal.loadAddon(new WebLinksAddon());
         terminal.loadAddon(fitAddon);
 
-        terminal.open(ele);
-        terminal.write('Hi from \x1B[1;31mNeXTSSH\x1B[0m $ ');
+        terminal.open(ele); 
+        terminal.write('Hi from \x1B[1;31mWEBSSH Client\x1B[0m $ ');
         fitAddon.fit();
         webTerminal.current = terminal;
 

@@ -1,10 +1,8 @@
 import BaseLayout from "@/components/BaseLayout";
 import Widget from '@/components/Widget';
 import { useEffect, useState } from 'react';
-import { useSession, getSession } from 'next-auth/react';
 
 const Dashboard = () => {
-  const { data: session, status } = useSession();
   const [connections, setConnections] = useState([]);
 
   useEffect(() => {
@@ -31,13 +29,7 @@ const Dashboard = () => {
     localStorage.removeItem(hostToRemove);
   };
 
-  if (status === "loading") {
-    return <div>Loading...</div>;
-  }
 
-  if (!session) {
-    return <div>Please sign in to view your dashboard.</div>;
-  }
 
   return (
     <BaseLayout pageTitle="CONNECTIONS">

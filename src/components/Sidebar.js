@@ -46,10 +46,10 @@ const Sidebar = () => {
             width={80}
             height={80}
             className="sidebar-logo"
-            src='/logo.jpg'
+            src='/next.svg'
             alt="logo"
           />
-          <p className="sidebar-title">NEXTSSH CLIENT <br/><span className="sidebar-subtitle">Version: 1.0.0 Elsie</span></p>
+          <p className="sidebar-title">WEBSSH CLIENT <br/><span className="sidebar-subtitle">Version: testing</span></p>
         </div>
         <ul className="sidebar-list">
           {sidebarItems.map(({ name, href, icon: Icon }) => {
@@ -72,10 +72,8 @@ const Sidebar = () => {
         </ul>
         {!isCollapsed && (
           <div className="sidebar-footer">
-            <p>Copyright © 2024 Tapiwanashe Mlambo</p>
-            <p>
-              <a href="https://tapiwamla.me" target="_blank" rel="noreferrer">Blog</a> | <a href="https://github.com/tapiwamla" target="_blank" rel="noreferrer">Github</a> | <a href="https://linkedin.com/in/tapiwamla" target="_blank" rel="noreferrer">Linkedin</a>
-            </p>
+            <p>Copyright © 2025 WEBSSH CLIENT</p>
+            
           </div>
         )}
       </aside>
